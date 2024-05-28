@@ -1,39 +1,38 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="menu.aspx.cs" Inherits="admin_menu" %>
 
 <!DOCTYPE html>
-
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
-    <style>  
-     .table-link {  
-        text-decoration: none; 
-        color: inherit; 
-        display: block; 
-        width: 100%;
-        height: 100%; 
-       }  
-  
-    .table-link:hover {  
-        background-color: #f0f0f0; 
-    }  
-    </style>  
+    <link rel="stylesheet" type="text/css" href="/css/style.css"/>
+    <script src="/js/jquery.js"></script>
+    <script src="/js/jquery.mCustomScrollbar.concat.min.js"></script>
+ 
 </head>
-<body style="background:#808080">
+<body>
+<aside class="lt_aside_nav content mCustomScrollbar">
     <form id="form1" runat="server">
         <div>
-            <table width="80%" align="center" border="1">
-                <tr>  <td align="center"><a href="#" class="table-link">学生管理</a></td>  </tr>  
-                <tr>  <td align="center"><a href="menulist.aspx" target="XSGL" class="table-link">专业管理</a></td>  </tr>
-                <tr>  <td align="center"><a href="menulist_add.aspx" target="XSGL" class="table-link">添加专业</a></td>  </tr>
-                <tr>  <td align="center"><a href="#" class="table-link">课程管理</a></td>  </tr>
-                <tr>  <td align="center"><a href="#" class="table-link">添加课程</a></td>  </tr>
-                <tr>  <td align="center"><a href="#" class="table-link">成绩管理</a></td>  </tr>
-                <tr>  <td align="center"><a href="#" class="table-link">添加成绩</a></td>  </tr>
-                <tr>  <td align="center"><a href="#" class="table-link">成绩导出</a></td>  </tr>
-            </table>
+            <h2>信息管理</h2>
+            <ul>
+                <li>
+                    <dl>
+                        <dt>专业</dt>
+                        <dd><a href="menulist.aspx" target="XSGL">专业管理</a></dd>
+                        <dd><a href="menulist_add.aspx" target="XSGL">添加专业</a></dd>
+                        <dt>课程</dt>
+                        <dd><a href="#" target="XSGL">课程管理</a></dd>
+                        <dd><a href="#" target="XSGL">添加课程</a></dd>
+                        <dt>成绩</dt>
+                        <dd><a href="#" target="XSGL">成绩管理</a></dd>
+                        <dd><a href="#" target="XSGL">添加成绩</a></dd>
+                        <dd><a href="#" target="XSGL">成绩导出</a></dd>
+                    </dl>
+                </li>
+            </ul>
         </div>
     </form>
+</aside>
 </body>
 </html>

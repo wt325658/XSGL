@@ -10,7 +10,15 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            编辑专业ttroiioioii
+            <table>
+                <tr>
+                    <td>
+                        <asp:HiddenField ID="id" runat="server" />
+                        专业：</td>
+                    <td><asp:TextBox ID="title" runat="server"></asp:TextBox></td>
+                    <td><asp:Button ID="Button1" runat="server" Text="修改" OnClick="Button1_Click" /></td>
+                </tr>
+            </table>
         </div>
     </form>
 </body>

@@ -10,7 +10,13 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            添加专业
+            <table>
+                <tr>
+                    <td>专业：</td>
+                    <td><asp:TextBox ID="title" runat="server"></asp:TextBox></td>
+                    <td><asp:Button ID="Button1" runat="server" Text="添加" OnClick="Button1_Click" /></td>
+                </tr>
+            </table>
         </div>
     </form>
 </body>
